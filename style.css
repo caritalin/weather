@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  background-image: url('images/iceland.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 110%;
+  color: white;
+}
+.grid {
+  display: grid;
+  margin: 1rem;
+  grid-template-rows: inherit;
+  grid-gap: 1rem;
+}
+
+.main {
+  background-color: transparent;
+  color:#fff;
+  margin: auto;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.card, .weather-box, .card-hourly {
+  background: #000000b7;
+  backdrop-filter: blur(6px);
+  padding: 2em;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.weather-box  {
+  padding: 1em;
+  line-height: 1em;
+}
+
+.flex {
+  display: flex;
+  margin-bottom: 1em;
+}
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.city {
+  text-transform: uppercase;
+  font-size: xx-large;
+}
+
