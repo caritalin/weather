@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 body {
+  scroll-behavior: smooth;
   height: 100%;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -52,7 +53,7 @@ body {
 }
 .description {
   text-transform: capitalize;
-  margin-left: 8px;
+  padding-top: 20px;
 }
 .weather.loading {
   visibility: hidden;
@@ -65,3 +66,7 @@ body {
   font-size: xx-large;
 }
 
+.icon {
+  width: 25% ;
+  height: auto;
+}
